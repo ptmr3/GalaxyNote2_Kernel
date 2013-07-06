@@ -2475,7 +2475,7 @@ static int mmc_blk_probe(struct mmc_card *card)
 		cap_str, md->read_only ? "(ro)" : "");
 
 if (mmc_blk_alloc_parts(card, md))
-  	goto out;
+  goto out;
 
 	mmc_set_drvdata(card, md);
 	mmc_fixup_device(card, blk_fixups);
