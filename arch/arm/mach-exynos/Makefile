@@ -329,3 +329,4 @@ obj-$(CONFIG_EXYNOS_SOUND_PLATFORM_DATA)	+= exynos_sound_platform_data.o
 
 obj-$(CONFIG_RQ_STATS)      += rq_stats.o
 obj-$(CONFIG_INTELLI_PLUG) += intelli_plug.o
+obj-$(CONFIG_FORCE_FAST_CHARGE) += fastchg.o
