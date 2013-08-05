@@ -1835,7 +1835,7 @@ config SK_UC
 
 config INTELLI_PLUG
 	bool "Enable intelli-plug cpu hotplug driver"
-	default n
+	default y
 	help
 	  Generic Intelli-plug cpu hotplug driver for ARM SOCs
 
