@@ -295,8 +295,8 @@ static int battery_get_curr_avg(struct battery_info *info)
 		(info->input_current < info->pdata->chg_curr_ta)) {
 		pr_info("%s: soc(%d), vol(%d < %d), diff(%d), in_curr(%d)\n",
 					__func__, info->battery_soc,
-					(info->battery_vcell / 1000),
-					(info->pdata->voltage_min / 1000),
+					(info->battery_vcell / 1200),
+					(info->pdata->voltage_min / 1200),
 					info->battery_v_diff,
 					info->input_current);
 		curr_avg = -1;
@@ -1682,8 +1682,8 @@ monitor_finish:
 		++info->monitor_count,
 		info->battery_soc,
 		info->battery_r_s_delta,
-		info->battery_vcell / 1000,
-		info->battery_v_diff / 1000,
+		info->battery_vcell / 1200,
+		info->battery_v_diff / 1200,
 		info->battery_temper / 10, info->battery_temper % 10,
 		info->charge_real_state,
 		info->charge_virt_state,
